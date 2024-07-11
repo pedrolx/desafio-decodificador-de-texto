@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="./utils/imgs/logo.png" alt="">
+    </header>
+
+    <main>
+
+        <section class="input__section">
+
+            <textarea id="textInput" placeholder="Digite seu texto"></textarea>
+
+            <div>
+                <div class="ps__div">
+                    <img src="./utils/imgs/exclamation.png" alt="">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <div class="buttons_div">
+                    <button id="criptografar" onClick=capturaInput()>Criptografar</button>
+                    <button id="descriptografar" onClick="capturaInputParaDescriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="text__section">
+
+            <div id="image__div">
+                <img src="./utils/imgs/infosvg.svg" alt="">
+            </div>
+
+            <div class="response__message">
+                <h2 id="message__title">Nenhuma mensagem encontrada</h2>
+                <div class="message__div">
+                    <textarea id="final__message">Digite um texto que você deseja criptografar ou descriptografar.</textarea>
+                </div>
+            </div>
+            <button id="response__button" class="response__message__button" onClick=copiaTexto()>Copiar</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/pedrolx">@pedrolx</a></p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
